@@ -1,0 +1,96 @@
+.work{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+    padding: 90px;
+    border-radius: 7px;
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+
+.work h2{
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.5;
+    text-align: center;
+}
+.boxDiv{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    border-radius: 20% 0% 20% 0%;
+    border: 1px solid #000;
+    background: rgba(51, 51, 34, 0.264);
+    width: fit-content;
+    
+}
+@media (max-width:1080px) {
+    .work {
+        padding: 10px;
+
+    }
+    .boxDiv{
+     flex-wrap: wrap;
+    }
+}
+
+.num{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.num h2{
+    margin: 0;
+    padding: 10px;
+    border-radius: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    border-bottom: 4px solid #eee;
+    font-size: 30px;
+    width: fit-content;
+    background-color: #000;
+
+}
+.num p{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(60, 2, 60);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text p{
+    font-family: "Inter", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: #000;
+        line-height: 1.5;
+        text-align: center;
+}

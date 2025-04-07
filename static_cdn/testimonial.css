@@ -1,0 +1,90 @@
+.testDiv {
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.title h3{
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+.title p{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.boxCard {
+    width: 70%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.top h4 {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    color: beige;
+}
+
+.body p {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+.date {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    color: beige;
+    text-align: right;
+}
+
+@media (max-width: 1070px) {
+    .boxCard {
+        width: 90%;
+    }
+
+   
+}

@@ -1,0 +1,86 @@
+	footer{
+        background: #000;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+    .socialMedia {
+	    display: flex;
+	    justify-content: flex-start;
+	    align-items: center;
+	    flex-wrap: wrap;
+	    margin: 22px 0px 20px;
+        gap: 15px;
+	}
+
+	.socialMedia a {
+	    width: 35px;
+	    height: 35px;
+	    text-decoration: none;
+	    text-align: center;
+	    margin-right: 15px;
+	    border-radius: 50%;
+	    background-color: rgb(0, 30, 60);
+	    transition: 0.4s;
+	}
+
+	.socialMedia a i {
+	    color: #ddd;
+	    font-size: 18px;
+	    line-height: 35px;
+	    border: 1px solid transparent;
+	    transition-delay: 0.4s;
+	}
+
+	.socialMedia a:hover {
+	    transform: translateY(-5px);
+	    background-color: #2e2e2e;
+	    color: dodgerblue;
+	    border: 1px solid dodgerblue;
+	}
+
+	.socialMedia a:hover i {
+	    color: dodgerblue;
+	}
+
+    .quicklinks{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .quicklinks a{
+        text-decoration: none;
+        outline: none;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: gray;
+    }
+
+        .quicklinks a:hover{
+            color: coral;
+            border-bottom: 1px solid #fff;
+        }
+
+        footer p{
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+                outline: none;
+                font-family: "Inter", sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+                color: gray;
+                border-top: 1px solid gray;
+                padding-top: 6px;
+        }
+
+                @media (max-width: 1070px) {
+                  
+                }

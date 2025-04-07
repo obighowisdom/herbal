@@ -1,0 +1,191 @@
+{% load static %}
+{% include 'header.html' %}
+
+
+<div class="about" id="about">
+	<div class="main-about">
+		<div class="inner-about">
+			<div class="about-content">
+				<h1>About Doctor Emua</h1>
+				<p>With several decades of experience and exposure, Doctor Emua has been helping and saving hundreds of
+					lives from all over the world from different continents, religion, tribe or race. Unlike modern
+					doctors, Doctor. Emua focuses purely on using nature’s gifts in the production of Herbal Supplements
+					which have been tested over the years to help to cure a wide range of illnesses, diseases and so
+					forth.</p>
+				<a style="text-decoration: none;" href="{% url 'myAppurl:about' %}">Read more</a>
+
+			</div>
+
+		</div>
+		<div class="inner-about">
+			<div class="inner-about-image">
+				<img src="{% static './images/replacement.jpg'%}" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="boxContent">
+	<div class="our-services">
+	<div class="service-content">
+		<div class="left-service-content">
+			<h1>Why Doctor Emua</h1>
+			<p>People have used herbs for thousands of years, relying on powdered supplements, teas, tinctures, and skin
+				creams to help treat everything from skin rashes to mild depression. Herbal supplements, also known as
+				botanicals, are made from the leaves, flowers, roots, and bark of plants. An herbalist is someone who
+				uses plants for healing. These practitioners are not medical doctors, though some practitioners are also
+				referred to as medical herbalist. Herbalists attempt to find the root cause of illness. Practitioners
+				like Doctor Emua will choose herbs based on the symptoms or ailments a patient describes during
+				consultation and generate a personalized prescription. Patients may use just one herbal treatment or a
+				combination of herbal supplements.</p>
+		</div>
+
+	</div>
+
+	<div>
+		{% include 'mission.html' %}
+	</div>
+</div>
+
+
+<div class="gallery">
+	<h1>Our Treatment</h1>
+	<div class="main-gallery">
+		<p class="emuatreat">We offer you the best organic herbs and natural remedies to most diseases. We understand disease at a level beyond the superficial symptoms and strive to find a permanent resolution through God’s direction. We work with our patients and aim to bring about a State of Absolute health while using natural remedies and resources. With God’s Wisdom, direction and years of Study directed towards the natural healing properties of natural herbs, their amazing benefits to the human body we have developed a unique range of capsules, drops, bottled herbs and dried herbs. We have employed scientific and modern testing and extraction processes to ensure the preservation of these benefits of these extract and ensuring that they are made affordable and of good quality to anyone anywhere in the world. Some of Our Treatment available are listed Below:</p>
+		<div class="inner-gallery">
+			<img src="{% static './Images/auto.jpg'%}" alt="">
+			<div class="abs">
+				<p>Treatment for Autoimmune conditions</p>
+				<div class="hovertext">
+				<b>Yes you can be cured <br> All you have to do is ... </b>
+				<a href="{% url 'myAppurl:contact' %}"><button>Contact Doctor Emua</button></a>
+			</div>
+			</div>
+			
+		</div>
+	
+
+		<div class="inner-gallery">
+			<img src="{% static './images/detox.jpg'%}" alt="">
+			<div class="abs">
+				<p>Detox</p>
+				<div class="hovertext">
+				<b>Yes you can be cured <br> All you have to do is ... </b>
+				<a href="{% url 'myAppurl:contact' %}"><button>Contact Doctor Emua</button></a>
+				
+			</div>
+			</div>
+
+			
+		</div>
+		<div class="inner-gallery">
+			<img src="{% static './images/diabetes.jpg'%}" alt="">
+			<div class="abs">
+				<p>Cure for Diabetes</p>
+				<div class="hovertext">
+				<b>Yes you can be cured <br> All you have to do is ... </b>
+				<a href="{% url 'myAppurl:contact' %}"><button>Contact Doctor Emua</button></a>
+			
+			</div>
+			</div>
+			
+		</div>
+		<div class="inner-gallery">
+			<img src="{% static './images/epstein.jpg'%}" alt="">
+			<div class="abs">
+				<p>Cure for Epstein Bars Virus</p>
+				<div class="hovertext">
+				<b>Yes you can be cured <br> All you have to do is ... </b>
+				<a href="{% url 'myAppurl:contact' %}"><button>Contact Doctor Emua</button></a>
+			
+			</div>
+			</div>
+
+			
+		</div>
+
+		<div class="inner-gallery">
+			<img src="{% static './images/skin.jpg'%}" alt="">
+			<div class="abs">
+				<p>Cure for Skin Infection</p>
+				<div class="hovertext">
+				<b>Yes you can be cured <br> All you have to do is ... </b>
+				<a href="{% url 'myAppurl:contact' %}"><button>Contact Doctor Emua</button></a>
+				
+			</div>
+			</div>
+
+			
+		</div>
+			<div class="inner-gallery">
+			<img src="{% static './images/hepatitis b.jpg'%}" alt="">
+			<div class="abs">
+				<p>Cure for Hepatitis B</p>
+				<div class="hovertext">
+				<b>Yes you can be cured <br> All you have to do is ... </b>
+				<a href="{% url 'myAppurl:contact' %}"><button>Contact Doctor Emua</button></a>
+				
+			</div>
+			</div>
+
+			
+		</div>
+			<div class="inner-gallery">
+			<img src="{% static './images/hpv.jpg'%}" alt="">
+			<div class="abs">
+				<p>Cure for HPV</p>
+				<div class="hovertext">
+				<b>Yes you can be cured <br> All you have to do is ... </b>
+				<a href="{% url 'myAppurl:contact' %}"><button>Contact Doctor Emua</button></a>
+				
+			</div>
+			</div>
+
+			
+		</div>
+			<div class="inner-gallery">
+			<img src="{% static './images/herpes.jpg'%}" alt="">
+			<div class="abs">
+				<p> Cure for Herpes <br>...and so much more</p>
+				<div class="hovertext">
+				<b>So many other cures available, do no gamble with your life or the lives of your loved ones, speak with Doctor Emua</b>
+				<a href="{% url 'myAppurl:herbal' %}"><button>See More</button></a>
+				
+			</div>
+			</div>
+
+			
+		</div>
+
+
+
+
+	</div>
+</div>
+
+ <div>
+  {% include 'testimony.html' %}
+ </div>  
+
+ <div>
+  {% include 'video.html' %}
+ </div>  
+</div>
+
+
+
+{% include 'footer.html' %}
+
+<script src="{% static './script.js'%}"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- provide an exceptional patient experience
+<i class="fas fa-notes-medical"></i>
+<i class="fas fa-hospital-user"></i>
+<i class="fas fa-user-md"></i>
+-->

@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static './testimonial.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <title>Doctor Emua Testimonial</title>
+  </head>
+  <body>
+    {% include "topnav.html" %}
+    <div class="testDiv">
+        <div class="title">
+            <h3>Testimonies</h3>
+            <p>Testimonies and Reviews from Doctor Emua’s patients from around the Globe
+
+</p>
+        </div>
+      {% for a in fam %}
+
+      <div class="boxCard">
+        <div class="top">
+          <img src="{{a.image.url}}" alt="" />
+          <h4>{{a.name}}</h4>
+        </div>
+
+        <div class="body">
+          <p>
+           {{a.testimony}}
+          </p>
+        </div>
+        <p class="date">{{a.date}}</p>
+      </div>
+      {% endfor %}
+      
+    </div>
+    {% include "footer.html" %}
+  </body>
+</html>

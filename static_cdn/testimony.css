@@ -1,0 +1,99 @@
+.testimonial {
+    margin-left: 90px;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #00000056;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.testimonial h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.testimonial h5 {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-size: 600;
+    color: brown;
+}
+
+.Boxcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 15px;
+
+}
+
+.innerCard {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.innerCard img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: coral
+}
+
+.bodyText {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: dark;
+    font-size: 12px;
+    color: rgb(23, 1, 23);
+    font-style: italic;
+}
+
+.bodyText a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000;
+}
+
+.cured {
+    padding: 6px 6px;
+    background: coral;
+    border-radius: 5px;
+
+}
+
+.cured p {
+    margin: 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: dark;
+    font-size: 12px;
+    color: rgb(23, 1, 23);
+}
+
+@media (max-width: 1070px) {
+    .testimonial {
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .testimonial h5{
+        font-size: 17px;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,66 @@
+{% load static %}
+<link rel="stylesheet" href="{% static './testimony.css'%}" />
+
+<div class="testimonial">
+  <h4>Testimony</h4>
+  <h5>See what people are saying about Doctor Emua</h5>
+  <div class="Boxcard">
+    <div class="innerCard">
+      <img src="../static/Images/random4.jpg" alt="" />
+      <div class="testiBody">
+        <p class="name">Veronica</p>
+        <p class="bodyText">
+          I’m Veronica from Canada, i was diagnosed with Hepatitis B 4 years ago,
+          i lived in pain with the knowledge that i wasn’t going to ever be well
+          okay, i contacted so many herbal doctors about herbs to cure me and
+          ended up spending some amount of money but i never got better i was
+          determined to get my lifestyle back and ... <a href="{% url 'myAppurl:testimonial' %}"> read more </a>
+        </p>
+      </div>
+      <div class="cured"><p>Cured from Hepatitis B</p></div>
+    </div>
+    <div class="innerCard">
+      <img src="../static/Images/random1.jpg" alt="" />
+      <div class="testiBody">
+        <p class="name">Thomas Herman</p>
+        <p class="bodyText">
+          Hello everyone, Thomas Herman from Florida, USA and i’m very happy
+          today to share this amazing testimony as Doctor Emua the herbal doctor
+          was able to cure me from my Herpes Virus with his herbal medicine.I
+          was been a diagnosed of HSV2 for a period of 4 years and have tried
+          different methods of...<a href="{% url 'myAppurl:testimonial' %}"> read more </a>
+        </p>
+      </div>
+      <div class="cured"><p>Cured from Herpes Virus</p></div>
+    </div>
+    <div class="innerCard">
+      <img src="../static/Images/stephanie.jpg" alt="" />
+      <div class="testiBody">
+        <p class="name">Stephanie</p>
+        <p class="bodyText">
+          Hello, I want to write a little review about the good work of Doctor
+          Emua, who cured me from HSV 1&2 in just 2 weeks with his herbal
+          medicine, I never believe I can be cured again and have a good life
+          like others, I always regretted the day I got diagnose with this
+          virus, I become lost of hope when my doctor told me...
+          <a href="{% url 'myAppurl:testimonial' %}"> read more </a>
+        </p>
+      </div>
+      <div class="cured"><p>Cured from HSV 1&2</p></div>
+    </div>
+    <div class="innerCard">
+      <img src="../static/Images/shane.jpg" alt="" />
+      <div class="testiBody">
+        <p class="name">Shane Jenkins</p>
+        <p class="bodyText">
+          My daughter purchased your product for me. When I saw the title, I was
+          very sceptical. I was told by my doctor that my condition (knee OA)
+          was age-related, irreversible and I needed joint replacement surgery.
+          Nevertheless, I used your product and started to follow your
+          guidelines because I had nothing to lose... <a href="{% url 'myAppurl:testimonial' %}"> read more </a>
+        </p>
+      </div>
+      <div class="cured"><p>Cured from Knee OA</p></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+{% load static %} {% include 'topnav.html' %}
+<link rel="stylesheet" href="{% static './about.css'%}" />
+
+<section class="about-us">
+  <div class="about">
+    <div class="text">
+      <h2>About Us</h2>
+
+      <p>
+        With several decades of experience and exposure, Doctor Emua has been
+        helping and saving hundreds of lives from all over the world from
+        different continents, religion, tribe or race. Unlike modern doctors,
+        Doctor Emua focuses purely on using nature’s gifts in the production of
+        Herbal Supplements which have been tested over the years to help to cure
+        a wide range of illnesses, diseases and so forth. If a person looks
+        deeply into the current norms, practices and ways with which modern
+        science operate these days, one would be very careful to trust the whole
+        system. Not to belittle the great effort of most doctors who have
+        studied and worked hard in the system, but to state that all practices
+        passed down to them as knowledge and research may be half truths or
+        carefully calculated knowledge passed so as to drive certain agendas and
+        policies for a select greddy and mischievous few. It is not very
+        difficult to note that morden healthcare has neglected championing the
+        need to promote healthy living and lifestyle, but rather are concerned
+        with solving health issues. We also know that there are lots of health
+        institutions that are covertly for profits and business. Infact these
+        institutions are among the largest in the health sector and these
+        include pharmacies and companies who provide health equipment
+        (specifically for certain conditions). So not to sound so much like a
+        conspiracy theorist, it should now be becoming common sense to know that
+        there are persons who profit from our health issues or illness. And this
+        is the reason why in the last 5 decades, there has been more than 150
+        "incurable" illnesses that has been said to be discovered and these
+        illnesses need a constant intake of certain drugs or a constant
+        procedure to manage, and like you know, these things aren't cheap. I
+        mean if your aren't paying for it, then your tax money is probably
+        paying for it like in some areas. So people, don't you think the best
+        thing a person should do is to learn to live a healthy life, eat well,
+        and get natural cures for whatever ailment befalls the person ? It is
+        now my job as a seasoned practitioner in herbal and holistic medicine to
+        do the best I can to enlighten and educate persons on the importance of
+        good living and plant based lifestyle and also to cure those suffering
+        from lingering health issues. Contact us today for advice or to get a
+        cure from the issue you have
+      </p>
+      <div class="data">
+        <a href="{% url 'myAppurl:contact' %}" class="hire">Talk to Doctor Emua</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div>{% include 'mission.html' %}</div>
+
+<div>{% include 'footer.html' %}</div>

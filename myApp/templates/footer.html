@@ -1,0 +1,26 @@
+{% load static %}
+<link rel="stylesheet" href="{% static './footer.css'%}" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+/>
+
+<footer>
+  <div class="socialDiv">
+    <div class="socialMedia">
+      <a href="https://web.facebook.com/people/Dr-emua-herbal-home/100078712044063/"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://api.whatsapp.com/message/SFIJKUKNKGLYC1?autoload=1&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/orion_herbal_home/?igshid=NTc4MTIwNjQ2YQ%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+  
+  <div class="quicklinks">
+    <a href="/">Home</a>
+    <a href="{% url 'myAppurl:herbal' %}">Herbal Cure</a>
+    <a href="{% url 'myAppurl:work' %}">How it Works</a>
+    <a href="{% url 'myAppurl:contact' %}">Contact Us</a>
+
+  </div>
+  <hr style="color: gray"/>
+  <p>Copyright @ doctoremuaherbalhome 2023</p>
+</footer>

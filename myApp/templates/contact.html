@@ -1,0 +1,145 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- *******  Link To CSS Style Sheet  ******* -->
+    <link rel="stylesheet" href="{% static './contact.css'%}" />
+
+    <!-- *******  Font Awesome Icons Link  ******* -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- *******  Link To Goggle Fonts  *******  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Section</title>
+  </head>
+  <body>
+    {% include "topnav.html" %}
+    
+      {% if messages %} {% for message in messages %}
+      <div style="display: flex; justify-content: center; text-align: center; color: green; padding: 8px 6px; background: #ffff; font-size: 18px; margin-top: 20px;" class="alert alert-{{message.tags}}">{{message}}</div>
+      {% endfor %} {% endif %}
+    
+    <div class="container">
+      <main class="row">
+        <!--  *******   Left Section (Column) Starts   *******  -->
+
+        <section class="col left">
+          <!--  *******   Title Starts   *******  -->
+
+          <div class="contactTitle">
+            <h2>Get In Touch</h2>
+            <p>Contact Doctor Emua to start your healing process</p>
+          </div>
+
+          <!--  *******   Title Ends   *******  -->
+
+          <!--  *******   Contact Info Starts   *******  -->
+
+          <div class="contactInfo">
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="details">
+                <span>whatsapp</span>
+                <span>
+                  <a
+                    style="text-decoration: none; font-size: 14px; color: green"
+                    href="https://api.whatsapp.com/message/SFIJKUKNKGLYC1?autoload=1&app_absent=0"
+                    >Message Doctor Emua Direct on Whatsapp</a
+                  ></span
+                >
+              </div>
+            </div>
+
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="details">
+                <span>Email</span>
+                <span
+                  style="text-decoration: none; font-size: 14px; color: green"
+                  >doctoremuahome@gmail.com</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--  *******   Contact Info Ends   *******  -->
+
+          <!--  *******   Social Media Starts   *******  -->
+
+          <div class="socialMedia">
+            <a
+              href="https://web.facebook.com/people/Dr-emua-herbal-home/100078712044063/"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/message/SFIJKUKNKGLYC1?autoload=1&app_absent=0"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/orion_herbal_home/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+
+          <!--  *******   Social Media Ends   *******  -->
+        </section>
+
+        <!--  *******   Left Section (Column) Ends   *******  -->
+
+        <!--  *******   Right Section (Column) Starts   *******  -->
+
+        <section class="col right">
+          <!--  *******   Form Starts   *******  -->
+
+          <form method="post" class="messageForm">
+            {% csrf_token %}
+
+            <div class="inputGroup halfWidth">
+              <input type="text" name="name" required="required" />
+              <label>Your Name</label>
+            </div>
+
+            <div class="inputGroup halfWidth">
+              <input type="email" name="email" required="required" />
+              <label>Email</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <input type="text" name="subject" required="required" />
+              <label>Subject</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <textarea name="body" required="required"></textarea>
+              <label>Say Something</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+
+          <!--  *******   Form Ends   *******  -->
+        </section>
+
+        <!--  *******   Right Section (Column) Ends   *******  -->
+      </main>
+    </div>
+  </body>
+</html>
+
+{% include 'footer.html' %}

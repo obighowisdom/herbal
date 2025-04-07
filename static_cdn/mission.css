@@ -1,0 +1,54 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    padding: 20px;
+    background: #00000056;
+    border-radius: 20px;
+}
+h2{
+    font-size: 22px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+.box-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.content p, .center p{
+    width: 600px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+.center{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.mission img{
+    border-radius: 10px;
+}
+
+@media (max-width: 1070px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content p, .center p {
+        width: 100%;
+    }
+}
